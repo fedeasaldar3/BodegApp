@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BodegApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="partes">
+        <item>Opcion</item>
+        <item>Cama</item>
+        <item>Estiba</item>
+    </string-array>
+</resources>

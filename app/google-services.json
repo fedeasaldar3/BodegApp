@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "488472462071",
+    "firebase_url": "https://bodegapp-9261a.firebaseio.com",
+    "project_id": "bodegapp-9261a",
+    "storage_bucket": "bodegapp-9261a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488472462071:android:5e0e67f86bc3db2b",
+        "android_client_info": {
+          "package_name": "com.example.bodegapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "488472462071-81jt0bhi8mi96uikqgj4h36bbmkifokd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bodegapp",
+            "certificate_hash": "174255c1616800affaf4a415dd407ed0b4ad1de3"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ6Zsv5IhThOq1145TsnnQuqcMhMPrJCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "488472462071-7n69us5qusc67cnjh0apmgmjt5brls67.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:background="@color/mygreen2"
+    android:layout_gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:id="@+id/text_bodega"
+        android:text="B1"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="66"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_referencia"
+                android:text="HQ-408"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="155dp"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Piso:"
+                    android:textStyle="bold"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_piso"
+                    android:text="1"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:paddingLeft="7dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/parte2"
+                    android:text="Cama:"
+                    android:textStyle="bold"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text_cama"
+                    android:text="1"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:paddingLeft="7dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="17"
+            android:id="@+id/iDelete"
+            android:src="@drawable/ic_delete_forever_black_24dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="17"
+            android:id="@+id/iEdit"
+            android:src="@drawable/ic_edit_black_24dp"/>
+
+    </LinearLayout>
+
+    
+</LinearLayout>

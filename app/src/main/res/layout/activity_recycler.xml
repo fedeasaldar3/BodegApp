@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecyclerActivity"
+    android:background="@color/mygreen2"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8.8"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:id="@+id/et_buscar"
+                    android:background="@color/white"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:hint="Buscar" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="34dp"
+                android:layout_weight="1.5"
+                android:src="@drawable/ic_edit_location_black_24dp"
+                android:id="@+id/bt_filtro"
+                android:layout_gravity="center_vertical"
+                android:onClick="abrirCuadroFiltro"/>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:orientation="vertical"
+                android:id="@+id/cuadroFiltro"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bodega: "
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <EditText
+                        android:layout_width="22dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:background="@color/white"
+                        android:id="@+id/filtroSupBodega"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Piso: "
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <EditText
+                        android:layout_width="22dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:background="@color/white"
+                        android:id="@+id/filtroSupPiso"/>
+
+                    <!--
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cama: "
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:textSize="16dp"
+                        android:textColor="@color/colorPrimaryDark" />
+                        -->
+
+
+                    <Spinner
+                        android:layout_width="94dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinnerFiltro"
+                        android:textAlignment="textStart"
+                        android:paddingRight="3dp"></Spinner>
+
+
+                    <EditText
+                        android:layout_width="22dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="1"
+                        android:background="@color/white"
+                        android:id="@+id/filtroSupColumna"/>
+                    <TextView
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/mygreen2"/>
+                    <EditText
+                        android:layout_width="22dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:background="@color/white"
+                        android:paddingLeft="5dp"
+                        android:id="@+id/filtroSupFila"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_search_black_24dp"
+                        android:paddingLeft="8dp"
+                        android:id="@+id/buscarFiltro"
+                        android:onClick="abrirBuscarFiltro"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:id="@+id/moverCama"
+                        android:text="Mover Locación"
+                        android:paddingHorizontal="4dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/white"
+                        android:onClick="abrirMoverCama"/>
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:paddingHorizontal="4dp"
+                        android:textColor="@color/white"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="Eliminar Cama" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:scrollbars="vertical"/>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/add_48dp"
+        android:visibility="visible"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lay_fragment">
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
